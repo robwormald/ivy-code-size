@@ -1,0 +1,29 @@
+{
+  "name": "ivy-code-size",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/animations": "angular/animations-builds",
+    "@angular/common": "angular/common-builds",
+    "@angular/compiler": "angular/compiler-builds",
+    "@angular/compiler-cli": "angular/compiler-cli-builds",
+    "@angular/core": "angular/core-builds",
+    "@angular/platform-browser": "angular/platform-browser-builds",
+    "@angular/platform-server": "angular/platform-server-builds",
+    "http-server": "^0.11.1",
+    "rollup": "^0.55.3",
+    "rollup-plugin-angular-optimizer": "^0.2.0",
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "rollup-plugin-paths": "^0.0.3",
+    "rollup-plugin-uglify": "^3.0.0",
+    "rxjs": "^5.5.6",
+    "typescript": "^2.7.1"
+  },
+  "scripts": {
+    "build": "ngc",
+    "bundle": "rollup -c rollup.config.js",
+    "serve": "http-server public",
+    "start": "npm run build && npm run bundle && npm run serve"
+  }
+}
