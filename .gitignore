@@ -1,2 +1,5 @@
-/node_modules/
-/lib/
+lib/
+node_modules/
+public/bundle.*
+package-lock.json
+yarn.lock
