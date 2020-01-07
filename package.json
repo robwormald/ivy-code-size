@@ -23,9 +23,8 @@
     "zone.js": "~0.10.0"
   },
   "scripts": {
-    "build": "ngc",
-    "bundle": "rollup -c rollup.config.js",
+    "build": "ngc && rollup -c rollup.config.js",
     "serve": "http-server public",
-    "start": "npm run build && npm run bundle && npm run serve"
+    "start": "npm run build && npm run serve"
   }
 }
