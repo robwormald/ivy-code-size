@@ -1,4 +1,6 @@
 lib/
 node_modules/
+public/bundle.js
+public/bundle.js.map
 package-lock.json
 yarn.lock
